@@ -1,0 +1,159 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-family: "Noto Sans", sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+section {
+  background-color: #e5c30a;
+}
+
+.section-body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.wrapper {
+  padding: 1.3rem;
+}
+
+body {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 0;
+}
+
+.img-flex {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.section-letter {
+  display: block;
+  width: 100%;
+}
+
+.section-icon {
+  display: block;
+  width: 100%;
+}
+
+@media only screen and (min-width: 20em) {
+
+  html {
+    font: normal 100%/1.3 sans-serif;
+  }
+
+  h2 {
+    font-weight: bold;
+  }
+
+  .section-letter {
+    float: left;
+    width: 50%;
+  }
+
+  .section-icon {
+    float: left;
+    width: 50%;
+  }
+
+}
+
+@media only screen and (min-width: 25em) {
+
+  html {
+    font: normal 100%/1.3 sans-serif;
+  }
+
+  .section-letter {
+    float: left;
+    width: 45%;
+  }
+
+  .section-icon {
+    float: left;
+    width: 45%;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  .section-letter {
+    float: left;
+    width: 15%;
+  }
+
+  .section-icon {
+    float: right;
+    width: 15%;
+  }
+
+  .section-body {
+    width: 60%;
+    float: left;
+    text-align: center;
+    margin: 0 1.4rem;
+  }
+
+  h2,
+  p {
+    text-align: left;
+  }
+
+  .wrapper {
+    overflow: hidden;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+    line-height: 1.5;
+  }
+
+  .wrapper {
+    display: inline-block;
+    max-width: 45em;
+    text-align: center;
+    margin-left: 12em;
+  }
+
+}
